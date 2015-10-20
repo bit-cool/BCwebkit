@@ -1,0 +1,28 @@
+/*
+	全局样式
+ */
+body{
+	font-family:'microsoft yahei';
+	font-size:14px;
+}
+ul li{
+	list-style: none;
+}
+.container-fluid{
+	width: 100%;
+}
+/*
+    header部分
+ */
+.head{
+	width: 90%;
+	margin:0 auto;
+	height: 80px;
+	padding: 15px;
+}
+.nav{
+	background: #e9e9e9;
+}
+.head-ul{
+	padding-top:10px;
+}
