@@ -26,7 +26,7 @@ ul li{
 	padding: 15px;
 }
 .nav{
-	background: #e9e9e9;
+	background: url(../images/head-bg.png);
 }
 .head-ul{
 	padding-top:10px;
@@ -39,6 +39,7 @@ ul li{
 	border-bottom: 2px solid #52aed9;
 }
 .head-ul li a{
+	min-width: 95px;
 	font-size: 16px;
 	color: #ffffff;
 	display: block;
@@ -82,4 +83,13 @@ ul li{
 }
 .instagram:hover{
 	background-position: -114px -38px;
+}
+/*
+   轮播
+ */
+.cs1{
+	position:absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
 }
