@@ -102,24 +102,25 @@ ul li{
  */
 #nav1{
 	position: absolute;
-	top: 550px;
+	top: 450px;
 	background-color: #f5f5f5;
 	color: #32586f;
+	padding-bottom: 15px;
 }
 .line{
 	border: 1px solid #32586f;
-	margin-top: 30px;
+	margin-top: 35px;
 	float: left;
 }
 .intro-h{
-	text-align: right;
+	text-align: center;
 }
-.intro-h::after{
+#nav1 .width .intro-h::before{
 	content: 'BitCool INTRODUCTION';
 	font-size: 14px;
-	position: relative;
-	top: 20px;
-	left: -40%;
+	position: absolute;
+	top: 30px;
+	left: 25%;
 }
 .intro{
 	padding: 0;
@@ -153,6 +154,22 @@ ul li{
 }
 .intro-detail{
 	padding: 10px 30px;
+}
+/*
+产品及服务
+ */
+#nav2{
+	position: absolute;
+	top: 956px;
+	color: #32586f;
+	background: #ffffff;
+}
+#nav2 .width .intro-h::before{
+	content: 'PRODUCTION AND SERVICE';
+	font-size: 14px;
+	position: absolute;
+	top: 30px;
+	left: 25%;
 }
 
 
