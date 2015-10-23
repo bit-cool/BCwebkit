@@ -106,8 +106,13 @@ ul li{
 公司简介
  */
 #nav1{
+<<<<<<< HEAD
 	position: relative;
 	top: -80px;
+=======
+	position: absolute;
+	top: 450px;
+>>>>>>> origin/gh-pages
 	background-color: #f5f5f5;
 	color: #32586f;
 	padding-bottom: 15px;
@@ -125,7 +130,11 @@ ul li{
 	font-size: 14px;
 	position: absolute;
 	top: 30px;
+<<<<<<< HEAD
 	left: 31%;
+=======
+	left: 25%;
+>>>>>>> origin/gh-pages
 }
 .intro{
 	padding: 0;
@@ -164,8 +173,13 @@ ul li{
 产品及服务
  */
 #nav2{
+<<<<<<< HEAD
 	position: relative;
 	top: -80px;
+=======
+	position: absolute;
+	top: 956px;
+>>>>>>> origin/gh-pages
 	color: #32586f;
 	background: #ffffff;
 }
@@ -174,6 +188,7 @@ ul li{
 	font-size: 14px;
 	position: absolute;
 	top: 30px;
+<<<<<<< HEAD
 	left: 27%;
 }
 .pro{
@@ -247,6 +262,10 @@ ul li{
 	border: 1px solid #ccc;
 }
 
+=======
+	left: 25%;
+}
+>>>>>>> origin/gh-pages
 
 
 
