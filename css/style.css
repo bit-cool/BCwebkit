@@ -335,6 +335,9 @@ ul li{
 #address{
 	padding-top: 20px;
 }
+.next{
+	display: none;
+}
 
 
 
