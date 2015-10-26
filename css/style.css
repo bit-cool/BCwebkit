@@ -51,11 +51,30 @@ ul li{
 	color: #ffffff;
 	display: block;
 	height: 55px;
+	text-decoration: none;
 }
-.head-ul li a:hover{
+.head-ul li a:hover,.head-ul li a:visited,.head-ul li a:active{
 	text-decoration: none;
 	color: #52aed9;
 	border-bottom: 2px solid #52aed9;
+	background: transparent;
+}
+/*修改bootstrap。min.css:5*/
+.nav .open>a,.nav .open>a:focus,.nav .open>a:hover{
+	background-color: transparent;
+	color: #52aed9;
+	border-bottom: 2px solid #52aed9; 
+}
+.menu-items{
+	min-width: 290px;
+    padding: 10px;
+    background: transparent;
+}
+.menu-items li a{
+	display: block;
+	padding: 5px;
+	height: 30px;
+	font-size: 14px;
 }
 .connect i{
 	display: inline-block;
@@ -106,13 +125,8 @@ ul li{
 公司简介
  */
 #nav1{
-<<<<<<< HEAD
 	position: relative;
 	top: -80px;
-=======
-	position: absolute;
-	top: 450px;
->>>>>>> origin/gh-pages
 	background-color: #f5f5f5;
 	color: #32586f;
 	padding-bottom: 15px;
@@ -130,11 +144,7 @@ ul li{
 	font-size: 14px;
 	position: absolute;
 	top: 30px;
-<<<<<<< HEAD
 	left: 31%;
-=======
-	left: 25%;
->>>>>>> origin/gh-pages
 }
 .intro{
 	padding: 0;
@@ -143,6 +153,8 @@ ul li{
 	border-radius: 20px;
 	-webkit-border-radius:20px;
     -moz-border-radius:20px;
+    -ms-border-radius:20px;
+    -o-border-radius:20px;
     behavior: url(../ie-css3.htc);
 }
 .img-top{
@@ -152,12 +164,17 @@ ul li{
 	width:100%;
 	height: 0px;
 	background: #ccc;
-	filter:alpha(opacity=0);  
+	-webkit-opacity:0;
+	-ms-opacity:0;
+	-o-opacity:0; 
     -moz-opacity:0;  
-    -khtml-opacity: 0;  
+    -khtml-opacity: 0; 
+    filter:alpha(opacity=0); 
     opacity: 0; 
 	border-radius: 20px;
 	-webkit-border-radius:20px;
+	-ms-border-radius:20px;
+	-o-border-radius:20px;
     -moz-border-radius:20px;
     behavior: url(../ie-css3.htc);
     text-align: center;
@@ -173,13 +190,8 @@ ul li{
 产品及服务
  */
 #nav2{
-<<<<<<< HEAD
 	position: relative;
 	top: -80px;
-=======
-	position: absolute;
-	top: 956px;
->>>>>>> origin/gh-pages
 	color: #32586f;
 	background: #ffffff;
 }
@@ -188,7 +200,6 @@ ul li{
 	font-size: 14px;
 	position: absolute;
 	top: 30px;
-<<<<<<< HEAD
 	left: 27%;
 }
 .pro{
@@ -256,16 +267,75 @@ ul li{
 	left: 37%;
 }
 #nav3 .width input{
-	width: 200px;
+	width: 170px;
 	height: 40px;
+	margin-right: 20px;
+	-webkit-border-radius:3px;
+	-ms-border-radius:3px;
+	-o-border-radius:3px;
+    -moz-border-radius:3px;
+    behavior: url(../ie-css3.htc);
 	border-radius: 3px;
 	border: 1px solid #ccc;
 }
-
-=======
-	left: 25%;
+.msg{
+	display: block;
 }
->>>>>>> origin/gh-pages
+#message{
+	border: 1px solid #ccc;
+	position: relative;
+	left:50px;
+	top: -20px;
+	margin-bottom: 15px;
+	-webkit-border-radius:3px;
+	-ms-border-radius:3px;
+	-o-border-radius:3px;
+    -moz-border-radius:3px;
+    behavior: url(../ie-css3.htc);
+	border-radius: 3px;
+}
+.col-lg-5 form label{
+	margin-top: 15px;
+}
+.col-lg-5 form p{
+	position: relative;
+	top: -15px;
+	left: 50px;
+}
+.col-lg-5 form p i{
+	background: url("../images/btn.png") no-repeat;
+	background-position: -268px -14px;
+	display: block;
+	float: left;
+	margin: 3px 2px 0 0;
+	width: 12px;
+	height: 12px;
+}
+.sub{
+	width: 80px;
+	height: 35px;
+	-webkit-border-radius:3px;
+	-ms-border-radius:3px;
+	-o-border-radius:3px;
+    -moz-border-radius:3px;
+    behavior: url(../ie-css3.htc);
+	border-radius: 3px;
+	background: #32586f;
+	color: #ffffff;
+	border: 1px solid #cccccc;
+	float: right;
+    margin-right: 40px;
+}
+#contact{
+	padding-left: 10%;
+}
+#allmap{
+	height: 200px;
+}
+#address{
+	padding-top: 20px;
+}
+
 
 
 
