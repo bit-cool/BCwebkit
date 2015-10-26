@@ -338,7 +338,13 @@ ul li{
 .next{
 	display: none;
 }
-
+footer{
+	position: relative;
+	top: -80px;
+	text-align: center;
+	color: #cccccc;
+	padding-top: 20px;
+}
 
 
 
