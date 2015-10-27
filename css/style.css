@@ -72,7 +72,7 @@ ul li{
 }
 #nav1{
 	position: relative;
-	top: -80px;
+	top: -100px;
 	background-color: #f5f5f5;
 	color: #32586f;
 	padding-bottom: 15px;
@@ -124,7 +124,7 @@ ul li{
  */
 #nav2{
 	position: relative;
-	top: -80px;
+	top: -100px;
 	color: #32586f;
 	background: #ffffff;
 }
@@ -796,7 +796,7 @@ ul li{
 /*contact us*/
 #nav3{
 	position: relative;
-	top: -80px;
+	top: -100px;
 	background: #f5f5f5;
 	color: #32586f;
 }
