@@ -1,6 +1,7 @@
 /*
 	全局样式
  */
+#bt{width:100px; height:100px;  background:url(bt.jpg) no-repeat -208px -70px; cursor:pointer; position:fixed; right:0; bottom:100px; display:none;}
 body{
 	font-family:'microsoft yahei';
 	font-size:14px;
@@ -35,30 +36,7 @@ ul li{
 .nav{
 	background: url(../images/head-bg.png);
 }
-.head-ul{
-	padding-top:10px;
-	text-align: center;
-	margin: 0;
-}
-.active{
-	text-decoration: none;
-	color: #52aed9 !important;
-	border-bottom: 2px solid #52aed9;
-}
-.head-ul li a{
-	min-width: 95px;
-	font-size: 16px;
-	color: #ffffff;
-	display: block;
-	height: 55px;
-	text-decoration: none;
-}
-.head-ul li a:hover,.head-ul li a:visited,.head-ul li a:active{
-	text-decoration: none;
-	color: #52aed9;
-	border-bottom: 2px solid #52aed9;
-	background: transparent;
-}
+
 /*修改bootstrap。min.css:5*/
 .nav .open>a,.nav .open>a:focus,.nav .open>a:hover{
 	background-color: transparent;
@@ -68,7 +46,7 @@ ul li{
 .menu-items{
 	min-width: 290px;
     padding: 10px;
-    background: transparent;
+    background:url("../images/second-nav.png");
 }
 .menu-items li a{
 	display: block;
@@ -76,54 +54,22 @@ ul li{
 	height: 30px;
 	font-size: 14px;
 }
-.connect i{
-	display: inline-block;
-	float: left;
-	margin: 5px;
-	background-image: url(../images/socialIcons.png) ;
-	width: 38px;
-	height: 38px;
-	position: relative;
-}
-.facebook{
-	background-position: 0px 0px;	
-}
-.facebook:hover{
-	background-position: 0px -38px;
-}
-.twitter{
-	background-position: -38px 0px;
-}
-.twitter:hover{
-	background-position: -38px -38px;
-}
-.google{
-	background-position: -76px 0px;
-}
-.google:hover{
-	background-position: -76px -38px;
-}
-.instagram{
-	background-position: -114px 0px;
-}
-.instagram:hover{
-	background-position: -114px -38px;
-}
+
+
 /*
    轮播
  */
-.cs1{
-	position:relative;
-	top: -80px;
-	left: 0;
-	z-index: -1;
-}
 .carousel-inner > .item > a > img, .carousel-inner > .item > img {
 	width: 100%;
 }
 /*
 公司简介
  */
+.line{
+		border: 1px solid #32586f;
+		margin-top: 35px;
+		float: left;
+}
 #nav1{
 	position: relative;
 	top: -80px;
@@ -131,21 +77,8 @@ ul li{
 	color: #32586f;
 	padding-bottom: 15px;
 }
-.line{
-	border: 1px solid #32586f;
-	margin-top: 35px;
-	float: left;
-}
-.intro-h{
-	text-align: center;
-}
-#nav1 .width .intro-h::before{
-	content: 'BitCool INTRODUCTION';
-	font-size: 14px;
-	position: absolute;
-	top: 30px;
-	left: 31%;
-}
+
+
 .intro{
 	padding: 0;
 	height: 400px;
@@ -195,13 +128,6 @@ ul li{
 	color: #32586f;
 	background: #ffffff;
 }
-#nav2 .width .intro-h::before{
-	content: 'PRODUCTION AND SERVICE';
-	font-size: 14px;
-	position: absolute;
-	top: 30px;
-	left: 27%;
-}
 .pro{
 	margin-top: 20px;
 }
@@ -218,40 +144,655 @@ ul li{
 }
 
 @media (min-width: 1200px){
-	.li-o{
+	/*导航*/
+	.lg-header{
+		height: 80px;
+	}
+	.head-ul{
+		padding-top:10px;
+		text-align: center;
+		margin: 0;
+	}
+	.lg-head-active{
+		text-decoration: none;
+		color: #52aed9 !important;
+		border-bottom: 2px solid #52aed9;
+	}
+	.head-ul li a{
+		min-width: 95px;
+		font-size: 16px;
+		color: #ffffff;
+		display: block;
+		height: 55px;
+		text-decoration: none;
+	}
+	.head-ul li a:hover,.head-ul li a:active{
+		text-decoration: none;
+		color: #52aed9;
+		border-bottom: 2px solid #52aed9;
+		background: transparent;
+	}
+	.connect i{
+		display: inline-block;
+		float: left;
+		margin: 5px;
+		background-image: url(../images/socialIcons.png) ;
+		width: 38px;
+		height: 38px;
+		position: relative;
+	}
+	.facebook{
+		background-position: 0px 0px;	
+	}
+	.facebook:hover{
+		background-position: 0px -38px;
+	}
+	.twitter{
+		background-position: -38px 0px;
+	}
+	.twitter:hover{
+		background-position: -38px -38px;
+	}
+	.google{
+		background-position: -76px 0px;
+	}
+	.google:hover{
+		background-position: -76px -38px;
+	}
+	.instagram{
+		background-position: -114px 0px;
+	}
+	.instagram:hover{
+		background-position: -114px -38px;
+	}
+	/*模块表头公共部分*/
+	.intro-h{
+		text-align: center;
+		font-size: 15px;
+	}
+	#nav1 .width .intro-h::before{
+		content: 'BitCool INTRODUCTION';
+		font-size: 12px;
+		position: absolute;
+		top: 30px;
+		left: 31%;
+	}
+	#nav2 .width .intro-h::before{
+		content: 'PRODUCTION AND SERVICE';
+		font-size: 12px;
+		position: absolute;
+		top: 30px;
+		left: 27%;
+	}
+
+	#nav3 .width .intro-h::before{
+		content: 'CONTACT US ';
+		font-size: 12px;
+		position: absolute;
+		top: 30px;
+		left: 37%;
+	}
+	/*
+   轮播
+   */
+	.cs1{
+		position:relative;
+		top: -80px;
+		left: 0;
+		z-index: -1;
+	}
+	.li-o,.li-t,.li-th{
 		border-bottom: 1px solid #d1d1d1;
 	}
-	.li-t{
-		border-left: 1px solid #d1d1d1;
+	.li-o,.li-t,.li-f,.li-fi{
 		border-right: 1px solid #d1d1d1;
-		border-bottom: 1px solid #d1d1d1;
 	}
-	.li-th{
-		border-bottom: 1px solid #d1d1d1;
+	#top{
+		display: none;
 	}
-	.li-fi{
-		border-left: 1px solid #d1d1d1;
-		border-right:1px solid #d1d1d1;
+	
+	.intro-h{
+		text-align: center;
+	}
+	/*联系我们*/
+	.col-lg-5 form p{
+		position: relative;
+		top: -15px;
+		left: 50;
+		font-size: 12px;
+	}
+	/*contact us*/
+	label{
+		float: left;
+	}
+	textarea{
+		width: 100%;
+		overflow-x:hidden;
+	}
+	#nav3 .width input{
+		float: right;
+		width: 63%;
+		height: 40px;
+		margin-right: 10px;
+		margin-bottom: 10px;
+		-webkit-border-radius:3px;
+		-ms-border-radius:3px;
+		-o-border-radius:3px;
+	    -moz-border-radius:3px;
+	    behavior: url(../ie-css3.htc);
+		border-radius: 3px;
+		border: 1px solid #ccc;
+	}
+	.col-md-5 form p{
+		position: relative;
+		top: -15px;
+		left: 0;
+		font-size: 12px;
+		width: 280px;
+	}
+	.sub{
+		position: relative;
+		right:-40px;
+		width: 80px;
+		height: 35px;
+		-webkit-border-radius:3px;
+		-ms-border-radius:3px;
+		-o-border-radius:3px;
+	    -moz-border-radius:3px;
+	    behavior: url(../ie-css3.htc);
+		border-radius: 3px;
+		background: #32586f;
+		color: #ffffff;
+		border: 1px solid #cccccc;
+		float: right;
+	    
+	}
+	.row div{
+		margin-bottom: 30px;
+	}
+	#contact{
+		float: right;
+		
+	}
+	label{
+		float: left;
+	}
+	textarea{
+		width: 100%;
+		overflow-x:hidden;
+	}
+	
+	.col-lg-5 form p{
+		position: relative;
+		top: -15px;
+		left: 0;
+		font-size: 12px;
+		width: 280px;
+	}
+	.sub{
+		position: relative;
+		right:-40px;
+		width: 80px;
+		height: 35px;
+		-webkit-border-radius:3px;
+		-ms-border-radius:3px;
+		-o-border-radius:3px;
+	    -moz-border-radius:3px;
+	    behavior: url(../ie-css3.htc);
+		border-radius: 3px;
+		background: #32586f;
+		color: #ffffff;
+		border: 1px solid #cccccc;
+		float: right;
+	    
+	}
+	.row div{
+		margin-bottom: 30px;
+	}
+	#contact{
+		padding-left: 15%;
+	}
+	
+	#message{
+		border: 1px solid #ccc;
+		position: relative;
+		left:50px;
+		top: -20px;
+		margin-bottom: 15px;
+		-webkit-border-radius:3px;
+		-ms-border-radius:3px;
+		-o-border-radius:3px;
+	    -moz-border-radius:3px;
+	    behavior: url(../ie-css3.htc);
+		border-radius: 3px;
 	}
 }
-/*@media (min-width: 992px){
-	.li-o,.li-th{
-		border-right: 1px solid #d1d1d1;
+@media (min-width: 992px) and (max-width: 1200px){
+	/*导航*/
+	.lg-head-active{
+		text-decoration: none;
+		color: #52aed9 !important;
+		border-bottom: 2px solid #52aed9;
+	}
+	.head-ul li a{
+		min-width: 43px;
+		font-size: 13px;
+		color: #ffffff;
+		display: block;
+		height: 55px;
+		text-decoration: none;
+	}
+	.head-ul li a:hover,.head-ul li a:active{
+		text-decoration: none;
+		color: #52aed9;
+		border-bottom: 2px solid #52aed9;
+		background: transparent;
+	}
+	.head-ul{
+		padding-top:15px;
+		text-align: center;
+		margin: 0;
+	}
+	.lg-header{
+		height: 80px;
+	}
+	#top{
+		display: none;
+	}
+	.connect i{
+		display: inline-block;
+		float: left;
+		margin: 15px 5px 0 0;
+		background-image: url(../images/socialIcons-sm.png) ;
+		width: 19px;
+		height: 19px;
+		position: relative;
+	}
+	.facebook{
+		background-position: 0px 0px;	
+	}
+	.facebook:hover{
+		background-position: 0px -19px;
+	}
+	.twitter{
+		background-position: -19px 0px;
+	}
+	.twitter:hover{
+		background-position: -19px -19px;
+	}
+	.google{
+		background-position: -19px 0px;
+	}
+	.google:hover{
+		background-position: -38px -19px;
+	}
+	.instagram{
+		background-position: -57px 0px;
+	}
+	.instagram:hover{
+		background-position: -57px -19px;
+	}
+	/*模块表头公共部分*/
+	.intro-h{
+		text-align: center;
+		font-size: 15px;
+	}
+	#nav1 .width .intro-h::before{
+		content: 'BitCool INTRODUCTION';
+		font-size: 12px;
+		position: absolute;
+		top: 30px;
+		left: 31%;
+	}
+	#nav2 .width .intro-h::before{
+		content: 'PRODUCTION AND SERVICE';
+		font-size: 12px;
+		position: absolute;
+		top: 30px;
+		left: 27%;
+	}
+
+	#nav3 .width .intro-h::before{
+		content: 'CONTACT US ';
+		font-size: 12px;
+		position: absolute;
+		top: 30px;
+		left: 37%;
+	}
+	/*
+	   轮播
+	 */
+	.cs1{
+		position:relative;
+		top: -80px;
+		left: 0;
+		z-index: -1;
+	}
+	.li-o,.li-t,.li-th,.li-f{
 		border-bottom: 1px solid #d1d1d1;
 	}
-	.li-fi{
-		border-right: 1px solid #d1d1d1;
+	.li-t,.li-f,.li-s{
+		border-left: 1px solid #d1d1d1;
 	}
-	.li-t,.li-f{
-		border-bottom: 1px solid #d1d1d1;
+	/*联系我们*/
+	.col-lg-5 form p{
+		position: relative;
+		top: -15px;
+		left: 50;
+		font-size: 12px;
 	}
+	/*contact us*/
+	
+	textarea{
+		width: 100%;
+		overflow-x:hidden;
+	}
+	#nav3 .width input{
+		
+		width: 200px;
+		height: 40px;
+		margin-right: 20px;
+		margin-bottom: 10px;
+		-webkit-border-radius:3px;
+		-ms-border-radius:3px;
+		-o-border-radius:3px;
+	    -moz-border-radius:3px;
+	    behavior: url(../ie-css3.htc);
+		border-radius: 3px;
+		border: 1px solid #ccc;
+	}
+	.col-md-5 form p{
+		position: relative;
+		top: -15px;
+		left: 0;
+		font-size: 12px;
+		width: 280px;
+	}
+	.sub{
+		position: relative;
+		right:-40px;
+		width: 80px;
+		height: 35px;
+		-webkit-border-radius:3px;
+		-ms-border-radius:3px;
+		-o-border-radius:3px;
+	    -moz-border-radius:3px;
+	    behavior: url(../ie-css3.htc);
+		border-radius: 3px;
+		background: #32586f;
+		color: #ffffff;
+		border: 1px solid #cccccc;
+		float: right;
+	    
+	}
+	.row div{
+		margin-bottom: 30px;
+	}
+	#contact{
+		float: right;
+		
+	}
+	#message{
+		border: 1px solid #ccc;
+		position: relative;
+		left:65px;
+		top: -20px;
+		margin-bottom: 15px;
+		-webkit-border-radius:3px;
+		-ms-border-radius:3px;
+		-o-border-radius:3px;
+	    -moz-border-radius:3px;
+	    behavior: url(../ie-css3.htc);
+		border-radius: 3px;
+	}
+	
 }
-@media (min-width: 768px){
+
+@media(min-width:473px) and (max-width: 992px){
+	
+	.nav{
+		background: transparent;
+	}
+	.intro-h{
+		float: left;
+		width: 65%;
+		text-align: center;
+		font-size: 13px;
+	}
+	#nav1 .width .intro-h::before{
+		content: 'BitCool INTRODUCTION';
+		font-size: 10px;
+		position: absolute;
+		top: 30px;
+		left: 31%;
+	}
+	#nav2 .width .intro-h::before{
+		content: 'PRODUCTION AND SERVICE';
+		font-size: 10px;
+		position: absolute;
+		top: 30px;
+		left: 27%;
+	}
+
+	#nav3 .width .intro-h::before{
+		content: 'CONTACT US ';
+		font-size: 10px;
+		position: absolute;
+		top: 30px;
+		left: 37%;
+	}
 	.li-o,.li-t,.li-th,.li-f,.li-fi,.li-s{
 		border-bottom: 1px solid #d1d1d1;
 	}
-}*/
+	.lg-header{
+		display: none;
+	}
+	.icon-bar{
+		border: 1px solid #32586f;
+	}
+	.cs1,#nav1,#nav2,#nav3{
+		position: relative;
+		top: -30px;
+		left: 0;
+	}
+	/*联系我们*/
+	#nav3 .width input{
+		width: 170px;
+		height: 40px;
+		margin-right: 20px;
+		-webkit-border-radius:3px;
+		-ms-border-radius:3px;
+		-o-border-radius:3px;
+	    -moz-border-radius:3px;
+	    behavior: url(../ie-css3.htc);
+		border-radius: 3px;
+		border: 1px solid #ccc;
+	}
+	.col-lg-5 form p{
+		position: relative;
+		top: -15px;
+		left: 50;
+		font-size: 12px;
+	}
+	/*contact us*/
+	
+	textarea{
+		width: 100%;
+		overflow-x:hidden;
+	}
+	#nav3 .width input{
+		
+		width: 60%;
+		height: 40px;
+		margin-right: 20px;
+		margin-bottom: 10px;
+		-webkit-border-radius:3px;
+		-ms-border-radius:3px;
+		-o-border-radius:3px;
+	    -moz-border-radius:3px;
+	    behavior: url(../ie-css3.htc);
+		border-radius: 3px;
+		border: 1px solid #ccc;
+	}
+	.col-lg-5 form p{
+		position: relative;
+		top: -15px;
+		left: 0;
+		font-size: 12px;
+		width: 280px;
+	}
+	.sub{
+		position: relative;
+		right:-40px;
+		width: 80px;
+		height: 35px;
+		-webkit-border-radius:3px;
+		-ms-border-radius:3px;
+		-o-border-radius:3px;
+	    -moz-border-radius:3px;
+	    behavior: url(../ie-css3.htc);
+		border-radius: 3px;
+		background: #32586f;
+		color: #ffffff;
+		border: 1px solid #cccccc;
+		float: right;
+	    
+	}
+	.row div{
+		margin-bottom: 30px;
+	}
+	#contact{
+		float: right;
+		
+	}
+	#message{
+		border: 1px solid #ccc;
+		position: relative;
+		left:50px;
+		top: -20px;
+		margin-bottom: 15px;
+		-webkit-border-radius:3px;
+		-ms-border-radius:3px;
+		-o-border-radius:3px;
+	    -moz-border-radius:3px;
+	    behavior: url(../ie-css3.htc);
+		border-radius: 3px;
+	}
+}
+@media (max-width: 473px){
+	/*模块表头公共部分*/
+	.intro-h{
+		float: left;
+		width: 60%;
+		text-align: center;
+		font-size: 10px;
+	}
+	#nav1 .width .intro-h::before{
+		content: 'BitCool INTRODUCTION';
+		font-size: 8px;
+		position: absolute;
+		top: 25px;
+		left: 4%;
+	}
+	#nav2 .width .intro-h::before{
+		content: 'PRODUCTION AND SERVICE';
+		font-size: 8px;
+		position: absolute;
+		top: 25px;
+		left: 0;
+	}
 
+	#nav3 .width .intro-h::before{
+		content: 'CONTACT US ';
+		font-size: 8px;
+		position: absolute;
+		top: 20px;
+		left: 23%;
+	}
+	.nav{
+		background: transparent;
+	}
+	/*产品及服务*/
+	.li-o,.li-t,.li-th,.li-f,.li-fi,.li-s{
+		border-bottom: 1px solid #d1d1d1;
+	}
+	.lg-header{
+		display: none;
+	}
+	.icon-bar{
+		border: 1px solid #32586f;
+	}
+	.cs1,#nav1,#nav2,#nav3{
+		position: relative;
+		top: -30px;
+		left: 0;
+	}
+	/*contact us*/
+	label{
+		float: left;
+	}
+	textarea{
+		width: 100%;
+		overflow-x:hidden;
+	}
+	#nav3 .width input{
+		float: right;
+		width: 150px;
+		height: 40px;
+		margin-right: 20px;
+		margin-bottom: 10px;
+		-webkit-border-radius:3px;
+		-ms-border-radius:3px;
+		-o-border-radius:3px;
+	    -moz-border-radius:3px;
+	    behavior: url(../ie-css3.htc);
+		border-radius: 3px;
+		border: 1px solid #ccc;
+	}
+	.col-lg-5 form p{
+		position: relative;
+		top: -15px;
+		left: 0;
+		font-size: 12px;
+		width: 280px;
+	}
+	.sub{
+		position: relative;
+		right:-40px;
+		width: 80px;
+		height: 35px;
+		-webkit-border-radius:3px;
+		-ms-border-radius:3px;
+		-o-border-radius:3px;
+	    -moz-border-radius:3px;
+	    behavior: url(../ie-css3.htc);
+		border-radius: 3px;
+		background: #32586f;
+		color: #ffffff;
+		border: 1px solid #cccccc;
+		float: right;
+	    
+	}
+	.row div{
+		margin-bottom: 30px;
+	}
+	#contact{
+		padding-left: 15%;
+	}
+	#message{
+		border: 1px solid #ccc;
+		position: relative;
+		left:50px;
+		top: -20px;
+		margin-bottom: 15px;
+		-webkit-border-radius:3px;
+		-ms-border-radius:3px;
+		-o-border-radius:3px;
+	    -moz-border-radius:3px;
+	    behavior: url(../ie-css3.htc);
+		border-radius: 3px;
+	}
+}
 /*contact us*/
 #nav3{
 	position: relative;
@@ -259,29 +800,10 @@ ul li{
 	background: #f5f5f5;
 	color: #32586f;
 }
-#nav3 .width .intro-h::before{
-	content: 'CONTACT US ';
-	font-size: 14px;
-	position: absolute;
-	top: 30px;
-	left: 37%;
-}
-#nav3 .width input{
-	width: 170px;
-	height: 40px;
-	margin-right: 20px;
-	-webkit-border-radius:3px;
-	-ms-border-radius:3px;
-	-o-border-radius:3px;
-    -moz-border-radius:3px;
-    behavior: url(../ie-css3.htc);
-	border-radius: 3px;
-	border: 1px solid #ccc;
-}
 .msg{
 	display: block;
 }
-#message{
+/*#message{
 	border: 1px solid #ccc;
 	position: relative;
 	left:50px;
@@ -293,15 +815,11 @@ ul li{
     -moz-border-radius:3px;
     behavior: url(../ie-css3.htc);
 	border-radius: 3px;
-}
+}*/
 .col-lg-5 form label{
 	margin-top: 15px;
 }
-.col-lg-5 form p{
-	position: relative;
-	top: -15px;
-	left: 50px;
-}
+
 .col-lg-5 form p i{
 	background: url("../images/btn.png") no-repeat;
 	background-position: -268px -14px;
@@ -311,7 +829,7 @@ ul li{
 	width: 12px;
 	height: 12px;
 }
-.sub{
+/*.sub{
 	width: 80px;
 	height: 35px;
 	-webkit-border-radius:3px;
@@ -325,10 +843,8 @@ ul li{
 	border: 1px solid #cccccc;
 	float: right;
     margin-right: 40px;
-}
-#contact{
-	padding-left: 10%;
-}
+}*/
+
 #allmap{
 	height: 200px;
 }

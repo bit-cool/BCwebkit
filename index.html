@@ -22,13 +22,13 @@
 </head>
 <body>
 	<div id="bt"></div>
-	<header>
+	<header class="lg-header">
 		<div class="container-fluid nav">
 			<div class="row head">
-				<img src="images/logo1.png" alt="" class="col-lg-3 pull-left">
-				<ul class="col-lg-5 head-ul">
-					<li class="col-lg-3 pull-left"><a href="#" class="active">首页</a></li>
-					<li class="col-lg-3 pull-left"><a href="#">公司简介</a></li>
+				<img src="images/logo1.png" alt="" class="col-lg-3 col-md-3 pull-left">
+				<ul class="col-lg-5 head-ul col-md-6 col-sm-7 row">
+					<li class="col-lg-3 pull-left"><a href="index.html" class="lg-head-active">首页</a></li>
+					<li class="col-lg-3 pull-left"><a href="#nav1">公司简介</a></li>
 					<li role="presentation" class="col-lg-3 pull-left dropdown">
 					    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
 					      产品及服务<span class="caret"></span>
@@ -42,9 +42,9 @@
 					      <li><a href="#">定制开发</a></li>
 					    </ul>
 				 	 </li>
-					<li class="col-lg-3 pull-left"><a href="#">联系我们</a></li>
+					<li class="col-lg-3 pull-left"><a href="#nav3">联系我们</a></li>
 				</ul>
-				<div class="col-lg-3 col-lg-offset-1 connect">
+				<div class="col-lg-3 col-lg-offset-1 col-md-3 connect row">
 					<i class="facebook"></i>
 					<i class="twitter"></i>
 					<i class="google"></i>
@@ -53,6 +53,38 @@
 			</div>
 		</div>
 	</header>
+	<header class="navbar navbar-static-top bs-docs-nav" id="top" role="banner">
+		<div class="container">
+		    <div class="navbar-header">
+			    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="true">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			    </button>
+		        <a href="#" class="navbar-brand">比特酷科技（北京）有限公司</a>
+		    </div>
+	        <nav id="bs-navbar" class="navbar-collapse collapse in" aria-expanded="true">
+			    <ul class="nav navbar-nav">
+			        <li class="active">
+			            <a href="index.html">首页</a>
+			        </li>
+			        <li>
+			            <a href="#nav1">公司简介</a>
+			        </li>
+			        <li >
+			            <a href="#">产品及服务</a>
+			        </li>
+			        <li>
+			            <a href="#nav3">联系我们</a>
+			        </li>
+			    </ul>
+	        </nav>
+	  </div>
+    </header>
+
+
+
 	<!-- carousel -->
 	<div id="carousel-example-generic" class="carousel slide cs1" data-ride="carousel">
 	  <!-- Indicators -->
@@ -98,9 +130,9 @@
     <!-- 公司简介 -->
     <div class="container-fluid" id="nav1">
     	<div class="row width">
-    		<div class="col-lg-4 line"></div>
-    		<h3 class="col-lg-4 intro-h">比 特 酷 简 介</h3>
-    		<div class="col-lg-4 line"></div>
+    		<div class="col-lg-4 col-md-2 col-sm-2 line"></div>
+    		<p class="col-lg-4 col-md-8 col-sm-8 intro-h">比 特 酷 简 介</p>
+    		<div class="col-lg-4 col-md-2 col-sm-2 line"></div>
     	</div>
     	<div class="row width">
     		<div class="col-lg-4 intro">
@@ -123,9 +155,9 @@
     <!-- 产品及服务 -->
      <div class="container-fluid" id="nav2">
     	<div class="row width">
-    		<div class="col-lg-4 line"></div>
-    		<h3 class="col-lg-4 intro-h">产品及服务</h3>
-    		<div class="col-lg-4 line"></div>
+    		<div class="col-lg-4 col-md-2 col-sm-2 line"></div>
+    		<h3 class="col-lg-4 col-md-8 col-sm-8 intro-h">产品及服务</h3>
+    		<div class="col-lg-4 col-md-2 col-sm-2 line"></div>
     	</div>
 		<ul class="pro row width">
 			<li class="col-lg-4 col-md-6 col-sm-12 col-xs-12 li-o">
@@ -163,25 +195,32 @@
     <!-- 联系我们 -->
     <div class="container-fluid" id="nav3">
     	<div class="row width">
-    		<div class="col-lg-4 line"></div>
-    		<h3 class="col-lg-4 intro-h">联 系 我 们</h3>
-    		<div class="col-lg-4 line"></div>
+    		<div class="col-lg-4 col-md-2 col-sm-2 line"></div>
+    		<h3 class="col-lg-4 col-md-8 col-sm-8 intro-h">联 系 我 们</h3>
+    		<div class="col-lg-4 col-md-2 col-sm-2 line"></div>
     	</div>
 		<div class="width row">
-			<div class="col-lg-5">
-				<form action="">
-					<label for="name">姓 名：</label>
-					<input type="text" id="name">
-					<label for="phone">电 话：</label>
-					<input type="text" id="phone">
-					<label for="message" class="msg">留言：</label>
-					<textarea rows="10" cols="56" placeholder="请留言..."id="message">
-					</textarea>
+			<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+				<form class="row"action="">
+					<div class="col-lg-6 col-md-12 col-sm-12">
+						<label for="name">姓 名：</label>
+						<input type="text" id="name">
+					</div>
+					<div class="col-lg-6 col-md-12  col-sm-12">
+						<label for="phone">电 话：</label>
+						<input type="text" id="phone">
+					</div>
+					<div class="col-lg-12">
+						<label for="message" class="msg">留言：</label>
+						<textarea rows="10" cols="56" placeholder="请留言..."id="message">
+						</textarea>
+					</div>
+					
 					<p><i></i>请填写有效的联系信息，便于及时回答你的问题</p>
 					<button type="submit" class="sub">提 交</button>
 				</form>
 			</div>
-			<div class="col-lg-7"id="contact">
+			<div class="col-lg-7  col-xs-12"id="contact">
 				<div class="row">
 					<div class="col-lg-9 pull-center"id="allmap"></div>
 					<div class="col-lg-9" id="address">
@@ -197,7 +236,9 @@
     <!-- 备案号 -->
     <footer>
 	    <div class="row width">
-	    	<h4 class="col-lg-12">版权所有：比特酷科技（北京）有限公司  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     STYLEMODE 2014-2019 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   备案号：京ICP备</h4>
+	    	<h5 class="col-lg-12">版权所有：比特酷科技（北京）有限公司 </h5>
+	    	<h5 class="col-lg-12">TYLEMODE 2014-2019</h5>
+	    	<h5 class="col-lg-12">备案号：京ICP备</h5>
 	    </div>
     	
     </footer>
