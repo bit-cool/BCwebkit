@@ -327,7 +327,7 @@ ul li{
 		top: -15px;
 		left: 0;
 		font-size: 12px;
-		width: 280px;
+		width: 100%;
 	}
 	.sub{
 		position: relative;
@@ -347,7 +347,7 @@ ul li{
 	    
 	}
 	.row div{
-		margin-bottom: 30px;
+		margin-bottom: 10px;
 	}
 	#contact{
 		padding-left: 15%;
@@ -506,7 +506,7 @@ ul li{
 		top: -15px;
 		left: 0;
 		font-size: 12px;
-		width: 280px;
+		width: 100%;
 	}
 	.sub{
 		position: relative;
@@ -608,12 +608,7 @@ ul li{
 		border-radius: 3px;
 		border: 1px solid #ccc;
 	}
-	.col-lg-5 form p{
-		position: relative;
-		top: -15px;
-		left: 50;
-		font-size: 12px;
-	}
+
 	/*contact us*/
 	
 	textarea{
@@ -639,7 +634,7 @@ ul li{
 		top: -15px;
 		left: 0;
 		font-size: 12px;
-		width: 280px;
+		width: 300px;
 	}
 	.sub{
 		position: relative;
