@@ -30,7 +30,13 @@ $(document).ready(function(){
       $(this).children(".next").hide();
       $(this).children(".pro-name").css("color","#d1d1d1");
    });
-
+   //扫二维码
+   $(".iphone-download").bind("mouseover",function(){
+      $(".ewm-new").css("display","block");
+   });
+   $(".iphone-download").bind("mouseout",function(){
+      $(".ewm-new").css("display","none");
+   });
 
    //回到顶部
    
@@ -59,6 +65,8 @@ $(document).ready(function(){
          });
      
    });
+
+   
 
    
 });

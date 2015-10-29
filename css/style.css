@@ -20,7 +20,7 @@ ul li{
 	width: 100%;
 }
 /*
-	返回顶部
+	首页返回顶部
  */
 p#back-to-top{
 	position: fixed;
@@ -61,7 +61,6 @@ p#back-to-top a span{
  header部分
  */
    
- 
 .head{
 	width: 80%;
 	margin:0 auto;
@@ -95,15 +94,14 @@ p#back-to-top a span{
 	font-size: 14px;
 }
 
-
 /*
-   轮播
+   首页轮播
  */
 .carousel-inner > .item > a > img, .carousel-inner > .item > img {
 	width: 100%;
 }
 /*
-公司简介
+  首页公司简介
  */
 .line{
 		border: 1px solid #32586f;
@@ -117,8 +115,6 @@ p#back-to-top a span{
 	color: #32586f;
 	padding-bottom: 15px;
 }
-
-
 .intro{
 	padding: 0;
 	height: 400px;
@@ -160,7 +156,7 @@ p#back-to-top a span{
 	padding: 10px 30px;
 }
 /*
-产品及服务
+   首页产品及服务
  */
 #nav2{
 	position: relative;
@@ -183,6 +179,95 @@ p#back-to-top a span{
 	color: #d1d1d1;
 }
 
+/*产品详情页上部图片部分*/
+
+
+.top_pic_head::after{
+	margin-left: 10px;
+	content: 'v1.02';
+	font-size: 12px;
+}
+
+
+/*.ewm-new{
+	display: none;
+	position: relative;
+	top: -100px;
+	left: 65%;
+}*/
+
+.app-download{
+		position: relative;
+		top: -500px;
+		padding: 0 10%;
+}
+.app-detail{
+	position: relative;
+	top: -450px;
+}
+.app-detail div{
+	margin-top: 30px;
+}
+.ele-detail{
+	text-align: center;
+}
+.pharse-right{
+	text-align: right;
+}
+.detail-footer{
+	position: relative;
+	top: -350px;
+	background: #f5f5f5;
+}
+@media(min-width: 1370px){
+	.img-rdiv{
+		padding: 50px 0 0 5%;
+	}
+	.img-rdiv span{
+		display: block;
+		margin-top: 15px;
+		background: url(../images/sprite.png) no-repeat;
+		width: 222px;
+		height: 63px;
+	}
+	.img-rdiv .iphone-download{
+		background-position: -286px -627px;
+	}
+	.img-rdiv .android-download{
+		background-position: -286px -564px;
+	}
+	.ewm-new{
+		display: none;
+		position: relative;
+		top: -100px;
+		left: 55%;
+	}
+}
+@media(min-width: 1200px) and (max-width: 1370px){
+	/*产品详情下载部分*/
+	.img-rdiv{
+		padding: 30px 0 0 5%;
+	}
+	.img-rdiv span{
+		display: block;
+		margin-top: 15px;
+		background: url(../images/sprite.png) no-repeat;
+		width: 222px;
+		height: 63px;
+	}
+	.img-rdiv .iphone-download{
+		background-position: -286px -627px;
+	}
+	.img-rdiv .android-download{
+		background-position: -286px -564px;
+	}
+	.ewm-new{
+		display: none;
+		position: relative;
+		top: -100px;
+		left: 68%;
+	}
+}
 @media (min-width: 1200px){
 	/*导航*/
 	.lg-header{
@@ -273,7 +358,7 @@ p#back-to-top a span{
 		left: 37%;
 	}
 	/*
-   轮播
+      轮播
    */
 	.cs1{
 		position:relative;
@@ -287,7 +372,7 @@ p#back-to-top a span{
 	.li-o,.li-t,.li-f,.li-fi{
 		border-right: 1px solid #d1d1d1;
 	}
-	#top{
+	#top,#top_detail{
 		display: none;
 	}
 	
@@ -406,6 +491,19 @@ p#back-to-top a span{
 	    behavior: url(../ie-css3.htc);
 		border-radius: 3px;
 	}
+	/*产品详情页上部图片部分*/
+	.top_pic{
+		position: relative;
+		top: -80px;
+		z-index: -1;
+		padding: 0;
+	}
+	.top_pic_head{
+		color: #ffffff;
+		margin-bottom: 50px;
+	}
+
+	
 }
 @media (min-width: 992px) and (max-width: 1200px){
 	/*导航*/
@@ -436,7 +534,7 @@ p#back-to-top a span{
 	.lg-header{
 		height: 80px;
 	}
-	#top{
+	#top,#top_detail{
 		display: none;
 	}
 	.connect i{
@@ -585,9 +683,75 @@ p#back-to-top a span{
 	    behavior: url(../ie-css3.htc);
 		border-radius: 3px;
 	}
+	/*产品详情页上部图片部分*/
+	.top_pic{
+		position: relative;
+		top: -80px;
+		z-index: -1;
+		padding: 0;
+	}
+	.app-download{
+		position: relative;
+		top: -430px;
+		padding: 0 5%;
+	}
+	.img-rdiv{
+		padding: 0 0 0 5%;
+	}
+	.img-rdiv span{
+		display: block;
+		margin-top: 15px;
+		background: url(../images/sprite.png) no-repeat;
+		width: 201px;
+		height: 57px;
+	}
+	.img-rdiv .iphone-download{
+		background-position: -2px -351px;
+	}
+	.img-rdiv .android-download{
+		background-position: -2px -294px;
+	}
+	.ewm-new{
+		display: none;
+		position: relative;
+		top: -80px;
+		left: 60%;
+	}
+	.top_pic_head{
+		color: #ffffff;
+		margin-bottom: 50px;
+	}
 	
 }
-
+@media(min-width: 850px) and (max-width: 992px){
+	.ewm-new{
+		display: none;
+		position: relative;
+		top: -100px;
+		left: 60%;
+	}
+}
+@media(min-width: 473px) and (max-width: 850px){
+	.img-rdiv span{
+		display: block;
+		margin-top: 15px;
+		background: url(../images/sprite.png) no-repeat;
+		width: 141px;
+		height: 38px;
+	}
+	.img-rdiv .iphone-download{
+		background-position: 0 -104px;
+	}
+	.img-rdiv .android-download{
+		background-position: 0 -66px;
+	}
+	.ewm-new{
+		display: none;
+		position: relative;
+		top: -50px;
+		left: 65%;
+	}
+}
 @media(min-width:473px) and (max-width: 992px){
 	/*隐藏回到顶部*/
 	p#back-to-top a{
@@ -716,7 +880,33 @@ p#back-to-top a span{
 	    behavior: url(../ie-css3.htc);
 		border-radius: 3px;
 	}
+	/*产品详情页上部图片部分*/
+	.top_pic{
+		position: relative;
+		top: -20px;
+		z-index: -1;
+		padding: 0;
+	}
+	.top_pic_head{
+		color: #ffffff;
+		margin-bottom: 20px;
+	}
+	.app-download{
+		position: relative;
+		top: -560px;
+		padding: 0 20%;
+	}
+	/*产品详情下载部分*/
+	.banner{
+		height: 280px;
+	}
+	.img-rdiv{
+		padding: 30px 0 0 5%;
+	}
+	
+	
 }
+
 @media (max-width: 473px){
 	/*隐藏回到顶部*/
 	p#back-to-top a{
@@ -833,6 +1023,26 @@ p#back-to-top a span{
 	    -moz-border-radius:3px;
 	    behavior: url(../ie-css3.htc);
 		border-radius: 3px;
+	}
+	/*产品详情页上部图片部分*/
+
+	.top_pic{
+		position: relative;
+		top: -20px;
+		z-index: -1;
+		padding: 0;
+	}
+	.top_pic_head{
+		color: #ffffff;
+		margin-bottom: 20px;
+	}
+	.app-download{
+		position: relative;
+		top: -500px;
+		padding: 0 10%;
+	}
+	.ewm-new{
+		width: 100%;
 	}
 }
 /*contact us*/
