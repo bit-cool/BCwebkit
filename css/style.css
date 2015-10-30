@@ -15,6 +15,7 @@ body{
     overflow: auto;
     overflow-x:hidden;
 }
+
 ul li{
 	list-style: none;
 }
@@ -220,6 +221,10 @@ p#back-to-top a span{
 	position: relative;
 	top: -350px;
 	background: #f5f5f5;
+}
+.top_pic{
+	width: 100%;
+	overflow-x:hidden;
 }
 @media(min-width: 1370px){
 	.img-rdiv{
@@ -972,6 +977,7 @@ p#back-to-top a span{
 }
 
 @media (max-width: 473px){
+
 	/*隐藏回到顶部*/
 	p#back-to-top a{
 		display: none;
