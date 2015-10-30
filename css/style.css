@@ -502,8 +502,17 @@ p#back-to-top a span{
 		color: #ffffff;
 		margin-bottom: 50px;
 	}
+	.img-rdiv{
+		height: 310px;
+	}
 
-	
+    .pharse-left{
+		display:block;
+		text-align: right;
+	}
+	.pharse-right{
+		display: none;
+	}	
 }
 @media (min-width: 992px) and (max-width: 1200px){
 	/*导航*/
@@ -697,6 +706,7 @@ p#back-to-top a span{
 	}
 	.img-rdiv{
 		padding: 0 0 0 5%;
+		height:310px;
 	}
 	.img-rdiv span{
 		display: block;
@@ -721,6 +731,13 @@ p#back-to-top a span{
 		color: #ffffff;
 		margin-bottom: 50px;
 	}
+	.pharse-left{
+		display: block;
+		text-align: right;
+	}
+	.pharse-right{
+		display: none;
+	}
 	
 }
 @media(min-width: 850px) and (max-width: 992px){
@@ -729,6 +746,38 @@ p#back-to-top a span{
 		position: relative;
 		top: -100px;
 		left: 60%;
+	}
+	.img-rdiv{
+		height: 200px;
+	}
+	.app-download{
+		position: relative;
+		top: -430px;
+		padding: 0 5%;
+	}
+	
+	.img-rdiv span{
+		display: block;
+		margin-top: 15px;
+		background: url(../images/sprite.png) no-repeat;
+		width: 201px;
+		height: 57px;
+	}
+	.img-rdiv .iphone-download{
+		background-position: -2px -351px;
+	}
+	.img-rdiv .android-download{
+		background-position: -2px -294px;
+	}
+	.ewm-new{
+		display: none;
+		position: relative;
+		top: -80px;
+		left: 60%;
+	}
+	.top_pic_head{
+		color: #ffffff;
+		margin-bottom: 50px;
 	}
 }
 @media(min-width: 473px) and (max-width: 850px){
@@ -750,6 +799,13 @@ p#back-to-top a span{
 		position: relative;
 		top: -50px;
 		left: 65%;
+	}
+	.img-rdiv{
+		height: 200px;
+	}
+	.app-detail{
+		position: relative;
+		top: -550px;
 	}
 }
 @media(min-width:473px) and (max-width: 992px){
@@ -903,7 +959,13 @@ p#back-to-top a span{
 	.img-rdiv{
 		padding: 30px 0 0 5%;
 	}
-	
+	.pharse-left{
+		display: block;
+		text-align: right;
+	}
+	.pharse-right{
+		display: none;
+	}	
 	
 }
 
@@ -1041,8 +1103,40 @@ p#back-to-top a span{
 		top: -500px;
 		padding: 0 10%;
 	}
+	.img-rdiv span{
+		display: block;
+		margin-top: 15px;
+		background: url(../images/sprite.png) no-repeat;
+		width: 141px;
+		height: 38px;
+	}
+	.img-rdiv .iphone-download{
+		background-position: 0 -104px;
+	}
+	.img-rdiv .android-download{
+		background-position: 0 -66px;
+	}
 	.ewm-new{
+		display: none;
+		position: relative;
+		top: -50px;
+		left: 70%;
+	}
+	.img-rdiv{
+		height: 200px;
+	}
+	.app-detail{
+		position: relative;
+		top: -470px;
+	}
+	.ele-detail img{
 		width: 100%;
+	}
+	.pharse-right{
+		display: block;
+	}
+	.pharse-left{
+		display: none;
 	}
 }
 /*contact us*/
