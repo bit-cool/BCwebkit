@@ -3,6 +3,8 @@
  */
 
 body{
+	width: 100%;
+	height: auto;
 	font-family:'microsoft yahei';
 	font-size:14px;
 	-moz-box-sizing: border-box;  
