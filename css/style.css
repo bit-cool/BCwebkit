@@ -1,7 +1,9 @@
 /*
 	全局样式
  */
-
+html{
+	height: 100%;
+}
 body{
 	font-family:'microsoft yahei';
 	font-size:14px;
@@ -12,6 +14,7 @@ body{
     box-sizing: border-box; 
     overflow: auto;
     overflow-x:hidden;
+    height: 100%;
 }
 ul li{
 	list-style: none;
@@ -83,6 +86,7 @@ p#back-to-top a span{
 	border-bottom: 2px solid #52aed9; 
 }
 .menu-items{
+	display: none;
 	min-width: 290px;
     padding: 10px;
     background:url("../images/second-nav.png");
@@ -333,6 +337,12 @@ p#back-to-top a span{
 	.instagram:hover{
 		background-position: -114px -38px;
 	}
+	/*二级导航*/
+	.menu-items{
+		position: absolute;
+		text-align: left;
+    	width: 320px;
+	}
 	/*模块表头公共部分*/
 	.intro-h{
 		text-align: center;
@@ -393,14 +403,18 @@ p#back-to-top a span{
 	label{
 		float: left;
 	}
+	
 	textarea{
 		width: 100%;
 		overflow-x:hidden;
 	}
+	#nav3 .width input#email{
+		width: 76%;
+	}
 	#nav3 .width input{
-		float: right;
+		float: left;
 		width: 63%;
-		height: 40px;
+		height: 30px;
 		margin-right: 10px;
 		margin-bottom: 10px;
 		-webkit-border-radius:3px;
@@ -419,8 +433,6 @@ p#back-to-top a span{
 		width: 280px;
 	}
 	.sub{
-		position: relative;
-		right:-40px;
 		width: 80px;
 		height: 35px;
 		-webkit-border-radius:3px;
@@ -436,8 +448,9 @@ p#back-to-top a span{
 	    
 	}
 	.row div{
-		margin-bottom: 30px;
+		margin-bottom: 20px;
 	}
+
 	#contact{
 		float: right;
 		
@@ -458,8 +471,6 @@ p#back-to-top a span{
 		width: 100%;
 	}
 	.sub{
-		position: relative;
-		right:-40px;
 		width: 80px;
 		height: 35px;
 		-webkit-border-radius:3px;
@@ -474,18 +485,17 @@ p#back-to-top a span{
 		float: right;
 	    
 	}
-	.row div{
-		margin-bottom: 10px;
-	}
 	#contact{
-		padding-left: 15%;
+		padding-left: 5%;
 	}
-	
+	textarea::-moz-placeholder,
+	textarea::-webkit-placeholder,
+	textarea::-o-placeholder{
+		color: #ccc;
+	}
 	#message{
+		width: 76%;
 		border: 1px solid #ccc;
-		position: relative;
-		left:50px;
-		top: -20px;
 		margin-bottom: 15px;
 		-webkit-border-radius:3px;
 		-ms-border-radius:3px;
@@ -582,6 +592,15 @@ p#back-to-top a span{
 	.instagram:hover{
 		background-position: -57px -19px;
 	}
+	/*二级导航*/
+	.menu-items{
+		position: absolute;
+		text-align: left;
+    	width: 320px;
+	}
+	ul.row li.col-md-3{
+		padding-right: 0;
+	}
 	/*模块表头公共部分*/
 	.intro-h{
 		text-align: center;
@@ -634,13 +653,13 @@ p#back-to-top a span{
 	/*contact us*/
 	
 	textarea{
-		width: 100%;
+		max-width: 70%;
+		float: left;
 		overflow-x:hidden;
 	}
 	#nav3 .width input{
-		
-		width: 200px;
-		height: 40px;
+		max-width: 70%;
+		height: 30px;
 		margin-right: 20px;
 		margin-bottom: 10px;
 		-webkit-border-radius:3px;
@@ -659,8 +678,6 @@ p#back-to-top a span{
 		width: 100%;
 	}
 	.sub{
-		position: relative;
-		right:-40px;
 		width: 80px;
 		height: 35px;
 		-webkit-border-radius:3px;
@@ -684,9 +701,6 @@ p#back-to-top a span{
 	}
 	#message{
 		border: 1px solid #ccc;
-		position: relative;
-		left:65px;
-		top: -20px;
 		margin-bottom: 15px;
 		-webkit-border-radius:3px;
 		-ms-border-radius:3px;
@@ -744,6 +758,11 @@ p#back-to-top a span{
 	
 }
 @media(min-width: 850px) and (max-width: 992px){
+	/*导航*/
+	
+
+
+	/*app下载*/
 	.ewm-new{
 		display: none;
 		position: relative;
@@ -772,12 +791,7 @@ p#back-to-top a span{
 	.img-rdiv .android-download{
 		background-position: -2px -294px;
 	}
-	.ewm-new{
-		display: none;
-		position: relative;
-		top: -80px;
-		left: 60%;
-	}
+	
 	.top_pic_head{
 		color: #ffffff;
 		margin-bottom: 50px;
@@ -874,32 +888,18 @@ p#back-to-top a span{
 		top: -30px;
 		left: 0;
 	}
-	/*联系我们*/
-	#nav3 .width input{
-		width: 170px;
-		height: 40px;
-		margin-right: 20px;
-		-webkit-border-radius:3px;
-		-ms-border-radius:3px;
-		-o-border-radius:3px;
-	    -moz-border-radius:3px;
-	    behavior: url(../ie-css3.htc);
-		border-radius: 3px;
-		border: 1px solid #ccc;
-	}
-
 	/*contact us*/
 	
 	textarea{
-		width: 100%;
+		max-width: 70%;
 		overflow-x:hidden;
 	}
-	#nav3 .width input{
-		
-		width: 60%;
-		height: 40px;
-		margin-right: 20px;
-		margin-bottom: 10px;
+	.contact-l .row input{
+		position: relative;
+		top: 8px;
+		float: left;
+		max-width: 70%;
+		height: 30px;
 		-webkit-border-radius:3px;
 		-ms-border-radius:3px;
 		-o-border-radius:3px;
@@ -913,11 +913,9 @@ p#back-to-top a span{
 		top: -15px;
 		left: 0;
 		font-size: 12px;
-		width: 300px;
+		width: 100%;
 	}
 	.sub{
-		position: relative;
-		right:-40px;
 		width: 80px;
 		height: 35px;
 		-webkit-border-radius:3px;
@@ -933,17 +931,15 @@ p#back-to-top a span{
 	    
 	}
 	.row div{
-		margin-bottom: 30px;
+		margin-bottom: 20px;
 	}
 	#contact{
 		float: right;
 		
 	}
 	#message{
+		float:left;
 		border: 1px solid #ccc;
-		position: relative;
-		left:50px;
-		top: -20px;
 		margin-bottom: 15px;
 		-webkit-border-radius:3px;
 		-ms-border-radius:3px;
@@ -1031,17 +1027,23 @@ p#back-to-top a span{
 		left: 0;
 	}
 	/*contact us*/
+	form.row div{
+		margin-bottom: 10px;
+	}
 	label{
 		float: left;
 	}
 	textarea{
-		width: 100%;
+		width: 70%;
 		overflow-x:hidden;
 	}
 	#nav3 .width input{
-		float: right;
-		width: 55%;
-		height: 40px;
+		position: relative;
+		left: 5px;
+		top: 10px;
+		width: 70%;
+		height: 30px;
+		padding: 1px 2px;
 		margin-right: 20px;
 		margin-bottom: 10px;
 		-webkit-border-radius:3px;
@@ -1052,6 +1054,9 @@ p#back-to-top a span{
 		border-radius: 3px;
 		border: 1px solid #ccc;
 	}
+	.contact-l{
+		margin-bottom: 30px;
+	}
 	.col-lg-5 form p{
 		position: relative;
 		top: -15px;
@@ -1060,8 +1065,6 @@ p#back-to-top a span{
 		width: 280px;
 	}
 	.sub{
-		position: relative;
-		right:-40px;
 		width: 80px;
 		height: 35px;
 		-webkit-border-radius:3px;
@@ -1076,17 +1079,13 @@ p#back-to-top a span{
 		float: right;
 	    
 	}
-	.row div{
-		margin-bottom: 30px;
-	}
 	#contact{
 		padding-left: 15%;
 	}
 	#message{
 		border: 1px solid #ccc;
 		position: relative;
-		left:50px;
-		top: -20px;
+		left:5px;
 		margin-bottom: 15px;
 		-webkit-border-radius:3px;
 		-ms-border-radius:3px;
@@ -1148,6 +1147,17 @@ p#back-to-top a span{
 		display: none;
 	}
 }
+/*修改bootstrap.min.css:5*/
+@media(min-width: 768px){
+	.navbar-nav>li>a{
+		padding-bottom: 6px;
+	}
+}
+@media(max-width: 768px){
+	.dropdown-response{
+		display: none;
+	}
+}
 /*contact us*/
 #nav3{
 	position: relative;
@@ -1160,7 +1170,8 @@ p#back-to-top a span{
 }
 
 .col-lg-5 form label{
-	margin-top: 15px;
+	float: left;
+	margin-top: 7px;
 }
 
 .col-lg-5 form p i{

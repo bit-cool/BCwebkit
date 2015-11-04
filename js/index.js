@@ -66,7 +66,36 @@ $(document).ready(function(){
      
    });
 
+   //导航栏的下拉菜单
+   $('#drop').bind('mouseover',function(){
+      $('.menu-items').css('display','block');
+      $('#drop .pro-ser').css('color','#52a1d9');
+      $('.menu-items').bind('mouseover',function(){
+         $('#drop .pro-ser').css('color','#52a1d9');
+      })
+   });
+   $('#drop').bind('mouseout',function(){
+      $('.menu-items').css('display','none');
+      $('#drop .pro-ser').css('color','#ffffff');
+   });
+   $('.dropdown').bind('mouseover',function(){
+      $(this).addClass('open');
+      $('.dropdown-toggle').css('aria-expanded','true');
+      $('.dropdown-menu').css('display','block');
+   });
+   $('.dropdown').bind('mouseout',function(){
+      $(this).removeClass('open');
+      $('.dropdown-toggle').css('aria-expanded','false');
+      $('.dropdown-menu').css('display','none');
+   });
+
+   $('.dropdown').bind('click',function(){
+      $(this).addClass('open');
+      $('.dropdown-toggle').css('aria-expanded','true');
+      $('.dropdown-menu').css('display','none');
+   });
    
+
 
    
 });

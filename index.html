@@ -27,13 +27,13 @@
 			<div class="row head">
 				<img src="images/logo1.png" alt="" class="col-lg-3 col-md-3 pull-left">
 				<ul class="col-lg-5 head-ul col-md-6 col-sm-7 row">
-					<li class="col-lg-3 pull-left"><a href="index.html" class="lg-head-active">首页</a></li>
-					<li class="col-lg-3 pull-left"><a href="#nav1">公司简介</a></li>
-					<li role="presentation" class="col-lg-3 pull-left dropdown">
-					    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+					<li class="col-lg-3 pull-left col-md-3"><a href="index.html" class="lg-head-active">首页</a></li>
+					<li class="col-lg-3 pull-left col-md-3"><a href="#nav1">公司简介</a></li>
+					<li class="col-lg-3 pull-left col-md-3 " id="drop">
+					    <a class="pro-ser">
 					      产品及服务<span class="caret"></span>
 					    </a>
-					    <ul class="menu-items dropdown-menu">
+					    <ul class="menu-items">
 					      <li><a href="production_detail.html">基于ios平台的移动互联应用服务及APP</a></li>
 					      <li><a href="#">基于Andriod平台的移动互联应用及App</a></li>
 					      <li><a href="#">跨平台/全平台桌面应用开发</a></li>
@@ -42,7 +42,7 @@
 					      <li><a href="#">定制开发</a></li>
 					    </ul>
 				 	 </li>
-					<li class="col-lg-3 pull-left"><a href="#nav3">联系我们</a></li>
+					<li class="col-lg-3 pull-left col-md-3"><a href="#nav3">联系我们</a></li>
 				</ul>
 				<div class="col-lg-3 col-lg-offset-1 col-md-3 connect row">
 					<i class="facebook"></i>
@@ -76,7 +76,7 @@
 					    <a class="dropdown-toggle lg-head-active" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
 					      产品及服务<span class="caret"></span>
 					    </a>
-					    <ul class="menu-items dropdown-menu">
+					    <ul class="menu-items dropdown-menu " >
 					      <li><a href="production_detail.html">基于ios平台的移动互联应用服务及APP</a></li>
 					      <li><a href="#">基于Andriod平台的移动互联应用及App</a></li>
 					      <li><a href="#">跨平台/全平台桌面应用开发</a></li>
@@ -210,29 +210,33 @@
     		<div class="col-lg-4 col-md-2 col-sm-2 line"></div>
     	</div>
 		<div class="width row">
-			<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
-				<form class="row"action="">
-					<div class="col-lg-6 col-md-12 col-sm-12">
-						<label for="name">姓 名：</label>
-						<input type="text" id="name">
+			<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 contact-l">
+				<form class="row"action=""method="">
+					<div class="col-lg-6 col-md-12 col-sm-12 row">
+						<label for="user">姓 名：</label>
+						<input type="text" id="user" name="user" placeholder="不得少于2个字符">
 					</div>
-					<div class="col-lg-6 col-md-12  col-sm-12">
-						<label for="phone">电 话：</label>
-						<input type="text" id="phone">
+					<div class="col-lg-6 col-md-12  col-sm-12 row">
+						<label for="phone" class="phone-label">电 话：</label>
+						<input type="text" id="phone" name="phone">
 					</div>
-					<div class="col-lg-12">
-						<label for="message" class="msg">留言：</label>
-						<textarea rows="10" cols="56" placeholder="请留言..."id="message">
+					<div class="col-lg-12 col-md-12  col-sm-12 row">
+						<label for="email">邮 箱：</label>
+						<input type="email" id="email" name="email" placeholder="example@example.com">
+					</div>
+					<div class="col-lg-12 row">
+						<label for="message" class="msg">留 言：</label>
+						<textarea type="text"rows="10"id="message" name="message" >
 						</textarea>
 					</div>
 					
-					<p class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><i></i>请填写有效的联系信息，便于及时回答你的问题</p>
+					<p class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><i></i>我们会对您的私人信息保密！请填写有效的联系信息，便于及时回答你的问题</p>
 					<button type="submit" class="sub">提 交</button>
 				</form>
 			</div>
-			<div class="col-lg-7  col-xs-12"id="contact">
+			<div class="col-lg-7  col-xs-12 col-md-7 col-sm-7"id="contact">
 				<div class="row">
-					<div class="col-lg-9 pull-center"id="allmap"></div>
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pull-left"id="allmap"></div>
 					<div class="col-lg-9" id="address">
 						<p>地址：北京市海淀区中国地质大学</p>
 						<p>电话：（86）186 0119 2972</p>
