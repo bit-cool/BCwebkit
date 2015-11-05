@@ -226,6 +226,8 @@ p#back-to-top a span{
 	top: -350px;
 	background: #f5f5f5;
 }
+
+/*响应式*/
 @media(min-width: 1370px){
 	.img-rdiv{
 		padding: 50px 0 0 5%;
@@ -526,8 +528,28 @@ p#back-to-top a span{
 	.pharse-right{
 		display: none;
 	}	
+	/*联系我们部分输入验证*/
+	form.row>div span{
+		display: none;
+		position: absolute;
+		top: 30px;
+		left: 60px;
+		float: left;
+		font-size:8px;
+		color: #db0c20;
+	}
 }
 @media (min-width: 992px) and (max-width: 1200px){
+	/*联系我们部分输入验证*/
+	form.row>div span{
+		display: none;
+		position: absolute;
+		top: 30px;
+		left: 60px;
+		float: left;
+		font-size:8px;
+		color: #db0c20;
+	}
 	/*导航*/
 	.lg-head-active{
 		text-decoration: none;
@@ -839,6 +861,16 @@ p#back-to-top a span{
 	}
 }
 @media(min-width:473px) and (max-width: 992px){
+	/*联系我们部分输入验证*/
+	form.row>div span{
+		display: none;
+		position: absolute;
+		top: 30px;
+		left: 60px;
+		float: left;
+		font-size:6px;
+		color: #db0c20;
+	}
 	/*隐藏回到顶部*/
 	p#back-to-top a{
 		display: none;
@@ -975,6 +1007,16 @@ p#back-to-top a span{
 }
 
 @media (max-width: 473px){
+	/*联系我们部分输入验证*/
+	form.row>div span{
+		display: none;
+		position: absolute;
+		top: 30px;
+		left: 60px;
+		float: left;
+		font-size:8px;
+		color: #db0c20;
+	}
 	/*隐藏回到顶部*/
 	p#back-to-top a{
 		display: none;

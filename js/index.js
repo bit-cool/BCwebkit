@@ -95,7 +95,54 @@ $(document).ready(function(){
       $('.dropdown-menu').css('display','none');
    });
    
-
+    //输入验证
+       $('.sub').bind('click',function(){
+         var $flag=1;
+         //验证姓名
+         if ($("#user").val().length<2) {
+            $("#user").css({"outline":"none",
+                              'borderColor':"#db0c20",
+                              });
+            $("#user").focus();
+            $("#user").next("span").show();
+            $flag+=1;
+         };
+         // 验证电话号码
+         var $phoneNum=/^1[3|4|5|7|8][0-9]{9}$/;
+         if(!$phoneNum.test($("#phone").val())){
+            $("#phone").css({"outline":"none",
+                              'borderColor':"#db0c20",
+                              });
+            $("#phone").next("span").show();
+            if($flag==1){
+               $("#phone").focus();
+            }else{
+               $("#user").focus();
+            }
+             $flag+=1;
+         }
+         //邮箱验证
+         var $email=/^[a-z0-9A-Z]+@[a-z0-9A-Z]+.com$/;
+         if(!$email.test($("#email").val())){
+            $("#email").css({"outline":"none",
+                              'borderColor':"#db0c20",
+                              });
+            $("#email").next("span").show();
+            if($flag==1){
+               $("#phone").focus();
+            }else if($flag==2){
+               $("#user").focus();
+            }
+            else{
+               $("#phone").focus();
+            }
+             $flag+=1;
+         }
+         if($flag!=1){
+            return false;
+         }
+       });
+         
 
    
 });
